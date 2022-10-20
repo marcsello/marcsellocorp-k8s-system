@@ -1,0 +1,12 @@
+controller:
+  ingressClassResource:
+    name: "nginx"
+    controllerValue: "k8s.io/ingress-nginx"
+    enabled: true
+  ingressClassByName: true
+  service:
+    type: "NodePort"
+  config:
+    use-forwarded-headers: "true"
+    compute-full-forwarded-for: "true"
+    use-proxy-protocol: "true"

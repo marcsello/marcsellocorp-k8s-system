@@ -1,0 +1,15 @@
+installCRDs: true
+prometheus:
+  enabled: false
+
+
+volumes:
+  - name: ca-pemstore
+    configMap:
+       name: ca-pemstore
+
+volumeMounts:
+  - name: ca-pemstore
+    mountPath: /etc/ssl/certs/internal-ca.pem
+    subPath: internal-ca.pem
+    readOnly: true

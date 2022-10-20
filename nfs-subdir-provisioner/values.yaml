@@ -1,0 +1,10 @@
+nfs:
+  server: "192.168.102.3"
+  path: "/srv/share/kube_data"
+  mountOptions:
+    - "soft"
+    - "timeo=30"
+    - "noexec"
+
+storageClass:
+  defaultClass: true
