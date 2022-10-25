@@ -12,6 +12,7 @@ metadata:
     # then you need to force the nginx ingress to connect to the backend using HTTPS.
     #
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    cert-manager.io/revision-history-limit: "5"
 spec:
   rules:
   - host: argocd.k8s.marcsello.com
