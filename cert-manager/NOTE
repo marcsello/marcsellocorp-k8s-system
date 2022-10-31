@@ -1,2 +1,4 @@
 Install cloudflare origin ca issuer plugin:
 https://github.com/cloudflare/origin-ca-issuer
+
+Origin issuer and origin issuer key must be added to the same namespace(s) as the ingress that uses it. (even better adding it trough argocd)
