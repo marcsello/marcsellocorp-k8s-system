@@ -1,0 +1,1 @@
+helm install -f values.yaml nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner --namespace nfs-provisioner --create-namespace
