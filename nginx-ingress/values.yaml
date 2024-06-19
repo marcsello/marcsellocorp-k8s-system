@@ -10,3 +10,4 @@ controller:
     use-forwarded-headers: "true"
     compute-full-forwarded-for: "true"
     use-proxy-protocol: "true"
+  replicaCount: 2
